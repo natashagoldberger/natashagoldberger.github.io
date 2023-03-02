@@ -1,0 +1,118 @@
+/* PROBLEM 1: Remove white margin of body, html */
+body, html {
+    margin-top: 0px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+/* PROBLEM 2: Select profile picture and make it round */
+#profile-pic img {
+    border-radius: 50%;
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* PROBLEM 3: Flesh our your follow button! 5 px for the
+top and bottom, 30 for the left and right*/
+#follow-button {
+    background-color: cornflowerblue;
+    width: 100px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+    float: right;
+    text-align: center;
+}
+
+/* PROBLEM 4: Turn items into a square, 120x120 px image */
+.item img {
+    width: 120px;
+}
+
+#pictures {
+    margin: auto;
+}
+
+/* PROBLEM 5: Create a 10 px horizontal space between items */
+.item img {
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+}
+.item {
+    display: inline-block;
+}
+
+.row {
+    display: block;
+}
+/* PROBLEM 6: Create a 10px vertical space between rows */
+/* YOUR CODE HERE */
+
+/* PROBLEM 7: Add 20px of space between each navigation item */
+#navbar .navbar-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 0px;
+    margin-top: 0px;
+}
+#navbar {
+    height: 20px;
+    float: right;
+}
+
+.navbar-item {
+    display: inline-block;
+}
+
+/* PROBLEM 8: Create a hover effect, so that items will have
+full opacity when hovered over! It should also have a
+transition period of 0.2 seconds*/
+.item {
+    opacity: .8;
+    transition: 0.2s
+}
+ .item:hover {
+    opacity: 1;
+ }
+
+/* PROBLEM 9: Add a click effect to the follow button, so
+the font becomes size 18 px when clicked on - as a result, the button will become
+larger when clicked on!*/
+#follow-button:active {
+    font-size: 18px;
+}
+
+/* PROBLEM 10: Add a hover effect such that the text of the
+navigation has an opacity of 1 when hovered over!*/
+
+
+.navbar-item {
+    opacity: 0.5;
+}
+
+.navbar-item:hover {
+    opacity: 1;
+}
+
+/* PROBLEM 11: In one selection, make the follow button, picture
+items, and nav bar items have a pointer cursor */
+#follow-button, #navbar, .item {
+    cursor: pointer;
+}
+
+#header {
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#username {
+    font-size: 18px;
+}
