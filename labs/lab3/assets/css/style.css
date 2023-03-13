@@ -130,14 +130,14 @@ a {
     color: #4c5765;
 }
 .body .caption {
-    opacity: 0.6;
+    opacity: 1;
 }
 #submission {
     padding: 0px 30px;
 }
 #submission-content p, #submission-content li {
     line-height: 24px;
-    opacity: 0.75;
+    opacity: 1;
 }
 .download {
     background: #78c272;
