@@ -13,14 +13,22 @@ nav ul {
 header {
     background: white;
     height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+
 #logo {
-    height: 200px;
+    height: 120px;
+    padding: 20px;
     margin: auto;
 }
+
 nav {
     display: inline-block;
     float: right;
+    margin-right: 20px;
 }
 nav li {
     display: inline-block;
@@ -30,7 +38,6 @@ nav li {
     cursor: pointer;
 }
 nav a {
-    color: rgb(231, 81, 81);
     font-size: 18 px;
     text-decoration: none;
 }
@@ -38,55 +45,200 @@ li:hover {
     background-color: rgb(249, 249, 125);
     font-weight: bold;
 }
+
+.heading {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#firstdog {
+    width: 300px;
+    height: 300px;
+}
+
+.firstdog {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
 .content {
-    width: 900px;
+    width: 1000px;
     margin: auto;
 }
 #locations {
     padding: 20px;
     border: 3px solid rgb(231, 81, 81);  
-    margin-bottom: 80px;
-    margin-top: 80px;
-    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
     background-color: rgb(249, 249, 125);
     border-radius: 20px;
+    width: 700px;
+    
+}
+
+#subtitle {
+    text-align: center;
+}
+.locationinfo {
+    margin: 0px;
+    padding: 0px;
+}
+
+.durant {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.center {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.locationinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #exploremenu {
     padding: 20px;
     border: 3px solid rgb(231, 81, 81);  
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
     background-color: rgb(249, 249, 125);
     border-radius: 20px;
+    width: 800px;
+}
+
+#menupreview {
+    padding: 20px;
+    border: 3px solid rgb(231, 81, 81);  
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(249, 249, 125);
+    border-radius: 20px;
+    width: 700px;
+}
+
+.menupreview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+#doggif {
+    width: 260px;
+    height: 175px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.menubutton {
+    font-size: 28px;
+    height: 40px;
+    width: 80%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: white;
+    border-radius: 5%;
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.menupreview a {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 section img {
-    width: 120px;
-    margin: 0;
+    width: 300px;
+    height: 300px;
 }
 h1 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'MADE Dillan', sans-serif;
     color: rgb(231, 81, 81);
-    font-size: 50px;
-    padding-top: 20px;
+    font-size: 40px;
+    padding-top: 10px;
     text-align: center;
+    margin: 0px;
 }
 
 p {
     font-family: Montserrat;
     font-size: 20px;
     color: black;
-    text-align: center;
-}
-h2 {
-    font-family: font-family: 'Bebas Neue', cursive;
-    color: rgb(231, 81, 81);
-    font-size: 30px;
     margin-top: 0px;
-    margin-bottom: 20px;
 }
 
+h2 {
+    font-family: 'MADE Dillan', sans-serif;
+    color: rgb(231, 81, 81);
+    font-size: 40px;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 14px;
+}
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(231, 81, 81);
+    font-size: 34px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    letter-spacing: .2rem;
+}
 section p {
     font-size: 20px;
+    margin-bottom: 10px;
 }
+
+.menuleft, .menuright {
+    width: 500px;
+}
+
+section {
+    margin: auto;
+}
+
+
+.menuitems {
+    padding: 20px;
+    border: 3px solid rgb(231, 81, 81);  
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(249, 249, 125);
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+/* .headline {
+    animation-name: slidein;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+ }
+ @keyframes slidein {
+    from {
+      transform: translateX(-80%);
+    }
+  
+    to {
+      transform: translateX(80%);
+    }
+  }
+  
+.headline {
+    width: 1000px;
+} */
