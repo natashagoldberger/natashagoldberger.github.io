@@ -1,0 +1,315 @@
+body {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: #fefefa;
+    font-family: 'poppins', sans-serif;
+    color: rgb(50, 50, 50);
+  }
+
+  @font-face {
+    font-family: 'Windsor Elongated';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Windsor Elongated'), url('WindsorElongated.woff') format('woff');
+    }
+
+  /* NAV BAR */
+  .nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-right: 0%;
+    margin-left: 72%;
+    margin-right: 8%;
+  }
+  .nav-item {
+    margin-bottom: 2.5%;
+    margin-left: 10%;
+    font-size: 16px;
+    letter-spacing: 0.5em;
+  }
+  .nav-item:hover {
+    cursor: pointer;
+  }
+
+  #home {
+    opacity: 1;
+    animation: fadeIn 4s ease-in;
+  }
+
+  #about {
+    opacity: 1;
+    animation: fadeIn2 5s ease-in;
+  }
+
+  a {
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+  } 
+/* NAV BAR END */
+
+/* LANDING PAGE */
+.section1 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+#intro-section {
+    width: 100%;
+    height: 100%;
+    z-index: -0.5;
+    position: relative;
+}
+
+  #explore-the {
+    position: center;
+    letter-spacing: 0.86em;
+    animation: fadeIn3 1.6s ease-in;
+    animation-fill-mode: forwards;
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  #brain-mind {
+    position: relative;
+    font-family: 'Windsor Elongated';
+    font-size: 120px;
+    letter-spacing: 0.1em;
+    animation: fadeIn 2.6s ease-in;
+    line-height: 1.2;
+  }
+ 
+  .heading {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    line-height: 105%;
+  }
+
+  #first-brain {
+   max-width: 300px;
+   cursor: pointer;
+  }
+
+ #first-brain {
+    position: relative;
+    animation: fadeIn4 7s;
+  } 
+
+ /*  #first-brain:hover {
+    cursor: pointer;
+    transition: 0.8s;
+    transform: scale(1.3);
+  } */ 
+  /* LANDING PAGE END */
+
+  .sectiontitle {
+    text-align: center;
+    position: relative;
+    font-family: 'Windsor Elongated';
+    font-size: 60px;
+    letter-spacing: 0.1em;
+    padding: 30px;
+  }
+
+  /* INFORMATION SECTION */
+  .section2 {
+    width: 100%;
+    height: 600px;
+    background-color: #fefefa;
+    position: relative;
+  }
+
+  #info-brain img {
+    max-width: 180px;
+    position: relative;
+   }
+   /* INFORMATION SECTION END*/
+
+/* PARTS SECTION */
+.section3-header {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;}
+
+   .section3 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+
+  .colored {
+    position: relative;
+    height: 800px;
+    top: 0;
+    left: 0;
+  }
+
+  .color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+  }
+
+  #blank {
+    position: relative;
+    width: 600px;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .hidden {
+	opacity: 0;
+  }
+
+.content {
+    padding-top: 20px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+
+#frontal-description {
+  display: none;
+}
+
+#temporal-description {
+  display: none;
+}
+
+#occipital-description {
+  display: none;
+}
+
+#parietal-description {
+  display: none;
+}
+
+#cerebellum-description {
+  display: none;
+}
+
+.description {
+  animation: appear 0.5s 1;
+}
+
+
+#default {
+	z-index: 1;
+}
+    /* buttons */
+    .buttons {
+        opacity: 0%;
+        background-color: transparent;
+        position: absolute;
+    }
+
+    .buttons:hover {
+        cursor: pointer;
+    }
+
+    #button1 {
+    width: 196px;
+    height: 80px;
+    left: 110px;
+    top: 87px;
+    z-index: 3;
+    background-color: pink;
+    }
+
+    #button2 {
+    width: 150px;
+    height: 51px;
+    left: 194px;
+    top: 198px;
+    z-index: 3;
+    background-color: blue;
+    }
+
+    #button3 {
+    width: 116px;
+    height: 84px;
+    left: 340px;
+    top: 101px;
+    z-index: 3;
+    background-color: purple;
+    }
+
+    #button4 {
+    width: 85px;
+    height: 57px;
+    left: 410px;
+    top: 195px;
+    z-index: 3;
+    background-color: green;
+    }
+
+    #button5 {
+    width: 126px;
+    height: 57px;
+    left: 324px;
+    top: 260px;
+    z-index: 3;
+    background-color: orange;
+    }
+     /* BUTTONS END  */
+
+  /* PARTS SECTION END */
+
+  /* KEYFRAMES */
+  @keyframes fade {
+    0% { opacity: 0.4; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeIn2 {
+    0% { opacity: 0; }
+    80% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeIn3 {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes fadeIn4 {
+    0% { opacity: 0; }
+    35% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes appear {
+    0% { opacity: 0;}
+    50% { opacity: 0.5;}
+    100% { opacity: 1;}
+  }
+
+  .description {
+    animation: appear 0.5s 1;
+  }
+  
+
+ 
