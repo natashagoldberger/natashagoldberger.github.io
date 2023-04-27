@@ -1,3 +1,4 @@
+//fade out landing
 const landingBrain = document.querySelector('#landing-brain');
 const landingContainer = document.querySelector('#landing-container');
 
@@ -8,6 +9,7 @@ landingBrain.addEventListener('click', () => {
     landingContainer.style.display = 'none';
   }, 1000);
 });
+
 
 //COLORING 
 function color(element) {
@@ -73,3 +75,4 @@ document.getElementById("button2").onmouseout = hideTemporal;
 document.getElementById("button3").onmouseout = hideParietal;
 document.getElementById("button4").onmouseout = hideOccipital;
 document.getElementById("button5").onmouseout = hideCerebellum;
+
