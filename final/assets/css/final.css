@@ -46,6 +46,14 @@ h3 {
   line-height: 1.2;
   letter-spacing: 0.4em;
 }
+
+h4 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
 .section-subtitle {
   text-align: center;
   position: relative;
@@ -90,7 +98,7 @@ h3 {
 
   #about {
     opacity: 1;
-    animation: fadeIn 4s ease-in;
+    animation: fadeIn 5s ease-in;
   }
 
   a {
@@ -191,17 +199,41 @@ h3 {
   line-height: 1.2;
 }
 
+#text-effect {
+  font-family: "ivypresto-display", serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
 #second-brain {
   max-width: 500px;
  }
 
  #about-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-around;
+  margin-left: 200px;
  }
 
+ #about-brain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ }
+
+ span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
 
 /* PARTS SECTION */
 
@@ -232,13 +264,11 @@ h3 {
 
    .section3 {
     width: 100%;
-    height: 600px;
     position: relative;
   }
 
   .colored {
     position: relative;
-    height: 800px;
     top: 0;
     left: 0;
   }
@@ -270,6 +300,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    height: 400px;
   }
 
   .description {
