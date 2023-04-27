@@ -8,6 +8,54 @@ body {
     color: rgb(50, 50, 50);
   }
 
+/* TEXT STYLES */
+p {
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.sectiontitle {
+  text-align: center;
+  position: relative;
+  font-family: 'Windsor Elongated';
+  font-size: 60px;
+  letter-spacing: 0.1em;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+h1 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.09em;
+}
+
+h2 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+h3 {
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.4em;
+}
+.section-subtitle {
+  text-align: center;
+  position: relative;
+  font-family: "ivypresto-display", serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 0em;
+  padding: 10px;
+}
+
   @font-face {
     font-family: 'Windsor Elongated';
     font-style: normal;
@@ -115,15 +163,6 @@ body {
   } */ 
   /* LANDING PAGE END */
 
-  .sectiontitle {
-    text-align: center;
-    position: relative;
-    font-family: 'Windsor Elongated';
-    font-size: 60px;
-    letter-spacing: 0.1em;
-    padding: 30px;
-  }
-
   /* INFORMATION SECTION */
   .section2 {
     width: 100%;
@@ -133,7 +172,7 @@ body {
   }
 
   #info-brain img {
-    max-width: 180px;
+    width: 100vw;
     position: relative;
    }
    /* INFORMATION SECTION END*/
@@ -144,7 +183,21 @@ body {
     height: 120px;
     position: relative;
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+    #functions {
+      letter-spacing: 0.1em;
+      font-size: 24px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    #parts-title {
+      text-align: center;
+    }
 
    .section3 {
     width: 100%;
@@ -181,10 +234,14 @@ body {
 
 .content {
     padding-top: 20px;
-    padding-left: 100px;
+    padding-left: 80px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+  }
+
+  .description {
+    width: 500px;
   }
   
 
