@@ -68,7 +68,7 @@ function hideOccipital() {
 
 function hideCerebellum() {
 	hide('cerebellum');
-}
+} 
 
 document.getElementById("button1").onmouseout = hideFrontal;
 document.getElementById("button2").onmouseout = hideTemporal;
@@ -78,36 +78,36 @@ document.getElementById("button5").onmouseout = hideCerebellum;
 
 
 
-document.addEventListener('DOMContentLoaded',function(event){
-  var dataText = [ "The brain lets us see.", "It lets us think.", "It lets us learn.", "It lets us experience.", "It lets us dream.", "It lets us live."];
+function typeOutText(dataText, textContainerSelector, speed) {
+  let i = 0;
   
   function typeWriter(text, i, fnCallback) {
     if (i < (text.length)) {
-     document.querySelector("h4").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+      document.querySelector(textContainerSelector).innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
 
       setTimeout(function() {
         typeWriter(text, i + 1, fnCallback)
-      }, 150);
-    }
-    
-    else if (typeof fnCallback == 'function') {
+      }, speed);
+    } else if (typeof fnCallback == 'function') {
       setTimeout(fnCallback, 1000);
     }
   }
   
-   function StartTextAnimation(i) {
-     if (typeof dataText[i] == 'undefined'){
-        setTimeout(function() {
-          StartTextAnimation(0);
-        }, 1000);
-     }
-    
-    if (i < dataText[i].length) {
-     typeWriter(dataText[i], 0, function(){
-       StartTextAnimation(i + 1);
-     });
+  function startTextAnimation(i) {
+    if (typeof dataText[i] == 'undefined') {
+      setTimeout(function() {
+        startTextAnimation(0);
+      }, 1000);
+    } else if (i < dataText[i].length) {
+      typeWriter(dataText[i], 0, function() {
+        startTextAnimation(i + 1);
+      });
     }
   }
  
-  StartTextAnimation(0);
-});
+  startTextAnimation(0);
+}
+
+// Words typed out
+const text = ["The brain lets us see.", "It lets us think.", "It lets us learn.", "It lets us experience.", "It lets us dream.", "It lets us live."];
+typeOutText(text, "h4", 150);
