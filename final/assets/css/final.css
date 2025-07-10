@@ -19,7 +19,7 @@ p {
 .sectiontitle {
   text-align: center;
   position: relative;
-  font-family: 'Windsor Elongated';
+  font-family: 'Windsor Pro Elongated';
   font-size: 60px;
   letter-spacing: 0.1em;
   padding: 10px;
@@ -65,10 +65,12 @@ h4 {
 }
 
   @font-face {
-    font-family: 'Windsor Elongated';
+    font-family: 'Windsor Pro Elongated';
+  src: url("C:/Users/natasha/Library/Fonts/WindsorProElongated.TTF");
     font-style: normal;
     font-weight: normal;
-src:local("C:\Users\natasha\Library\Fonts\WindsorProElongated.TTF");
+}
+
     }
 
   /* NAV BAR */
@@ -144,7 +146,7 @@ src:local("C:\Users\natasha\Library\Fonts\WindsorProElongated.TTF");
 
   #brain-mind {
     position: relative;
-    font-family: 'Windsor Elongated';
+    font-family: 'Windsor Pro Elongated';
     font-size: 120px;
     letter-spacing: 0.1em;
     animation: fadeIn 2.6s ease-in;
